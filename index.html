@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Prototype</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+        }
+        header {
+            background-color: #002F6C;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #FFD700;
+        }
+        nav a {
+            color: #002F6C;
+            text-decoration: none;
+            padding: 1em;
+        }
+        nav a:hover {
+            background: #FFA500;
+        }
+        .hero {
+            text-align: center;
+            padding: 2em;
+            background-color: #FFD700;
+            color: #002F6C;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .services, .contact, .inventory, .checkout {
+            padding: 2em;
+            text-align: center;
+        }
+        .services h2, .contact h2, .inventory h2, .checkout h2 {
+            margin-bottom: 1em;
+            color: #002F6C;
+        }
+        .services .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1em;
+        }
+        .services .card {
+            background: white;
+            border: 1px solid #FFA500;
+            border-radius: 5px;
+            padding: 1em;
+            color: #002F6C;
+        }
+        footer {
+            background-color: #002F6C;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="84 Lumber Logo">
+        <h1>84 Lumber</h1>
+        <p>Building the future, one project at a time.</p>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#inventory">Inventory</a>
+        <a href="#contact">Contact</a>
+        <a href="#checkout">Checkout</a>
+        <a href="#payments">Payments</a>
+    </nav>
+    <div class="hero">
+        <h1>Welcome to 84 Lumber</h1>
+        <p>Your trusted partner in construction and materials.</p>
+    </div>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Custom Lumber Solutions</h3>
+                <p>Tailored to your project needs.</p>
+            </div>
+            <div class="card">
+                <h3>Building Materials</h3>
+                <p>Top-quality materials for any construction project.</p>
+            </div>
+            <div class="card">
+                <h3>Project Consultation</h3>
+                <p>Expert advice to bring your vision to life.</p>
+            </div>
+        </div>
+    </section>
+    <section id="inventory" class="inventory">
+        <h2>Inventory</h2>
+        <p>Explore our wide range of products available for your construction and renovation needs.</p>
+        <p><a href="#contact">Contact a salesperson</a> for specific items or further details.</p>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@84lumber.com | Phone: (555) 123-4567</p>
+        <p>Address: 84 Lumber Company Headquarters, Your City, Your State</p>
+        <p>For specific inquiries, <a href="#">reach out to a salesperson</a>.</p>
+    </section>
+    <section id="checkout" class="checkout">
+        <h2>Checkout</h2>
+        <p>Complete your order with our secure payment options.</p>
+        <p>Choose your preferred method:</p>
+        <ul>
+            <li>Pickup at your nearest 84 Lumber store.</li>
+            <li>Delivery directly to your location.</li>
+        </ul>
+    </section>
+    <section id="payments" class="payments">
+        <h2>Online Payments</h2>
+        <p>Pay securely using our online payment gateway. We accept all major credit cards, debit cards, and online banking options.</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 84 Lumber. All rights reserved.</p>
+    </footer>
+</body>
+</html>
